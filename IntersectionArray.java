@@ -1,55 +1,16 @@
-/*
-349. Intersection of Two Arrays
-
-Input: nums1 = [4,9,5], nums2 = [9,4,9,8,4]
-Output: [9,4]
-Explanation: [4,9] is also accepted.
-*/
-
-import java.util.*;
-class IntersectionArray
+class Demo
 {
-      public static void main(String args[])
+	  public static void main(String args[]){
+	       add(4,5);
+		   add(5.5f,6.8f);
+	  }
+	  
+	  public static void add(int a,int b)
 	  {
-	      Scanner sc=new Scanner(System.in);
-		  int a[]=new int[5];
-		  int b[]=new int[3];
-		  
-		  System.out.println("Enter  A Array");
-		  for(int i=0;i<a.length;i++)
-		  {
-		    a[i]=sc.nextInt();
-		  }
-		  
-		  System.out.println("Enter  B Array ");
-		  for(int j=0;j<b.length;j++)
-		  {
-		      b[j]=sc.nextInt();
-		  }
-		  
-		  for(int i=0;i<a.length;i++)
-		  {  boolean flag=false;
-		     for(int k=0;k<i;k++)
-			 {
-			    if(a[i]==a[k])
-				{
-				 
-				    flag=true;
-				}
-			 }
-			 if(flag)
-			 {
-				 continue;
-			 } 
-				 for(int j=0;j<b.length;j++)
-				 {
-					 if(a[i]==b[j])
-					 {
-						  System.out.println(a[i]);
-						  break;
-					 }
-				 }
-			 
-		  }
+		  System.out.println(a+b);
+	  }
+	  public static void add(float a,float b)
+	  {
+		  System.out.println(a+b);
 	  }
 }
